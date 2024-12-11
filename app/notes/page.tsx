@@ -6,12 +6,11 @@ export default async function Page() {
     return (
         <div>
             <ul>
-                {data.map((d) => {
-                    return (
-                        <li>{d.name}</li>
-
+                {data.map((d) => 
+                     (
+                        <li key={d.id}>{d.name}</li>
                     )
-                })}
+                )}
             </ul>
 
         </div>
